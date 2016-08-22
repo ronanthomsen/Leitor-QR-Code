@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LeitorQRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habilitar o botão &quot;CANCELAR&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPI-lf-Cfe">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="68" y="276" width="163" height="21"/>
+                                </variation>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qfn-2o-bXo">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="239" y="271" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKu-yE-NL9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.91372549020000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Ler QR Code"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="121" y="351" width="159" height="78"/>
+                                </variation>
+                                <connections>
+                                    <action selector="scanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9i-eN-1ia"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="top" secondItem="gPI-lf-Cfe" secondAttribute="bottom" constant="55" id="1kG-OZ-Ot0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qfn-2o-bXo" secondAttribute="trailing" constant="38" id="4ka-5d-fyo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wKu-yE-NL9" secondAttribute="trailing" constant="100" id="5VL-tC-oDB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qfn-2o-bXo" secondAttribute="bottom" constant="298" id="5jk-Cg-f9S"/>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="top" secondItem="gPI-lf-Cfe" secondAttribute="bottom" constant="55" id="8dW-IP-3uL"/>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="top" secondItem="gPI-lf-Cfe" secondAttribute="bottom" constant="55" id="C9N-kK-YAn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qfn-2o-bXo" secondAttribute="bottom" constant="298" id="DGD-kI-yr5"/>
+                            <constraint firstItem="gPI-lf-Cfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="JZN-Ix-60r"/>
+                            <constraint firstItem="Qfn-2o-bXo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="251" id="Kbd-03-UP2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wKu-yE-NL9" secondAttribute="bottom" constant="170" id="ReR-j6-tUu"/>
+                            <constraint firstItem="Qfn-2o-bXo" firstAttribute="leading" secondItem="gPI-lf-Cfe" secondAttribute="trailing" constant="3" id="V9q-bq-max"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wKu-yE-NL9" secondAttribute="trailing" constant="100" id="Xgp-BP-asK"/>
+                            <constraint firstItem="gPI-lf-Cfe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="256" id="Y5Z-xa-jn9"/>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="YUv-qj-ZqT"/>
+                            <constraint firstItem="Qfn-2o-bXo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="251" id="cMA-pb-9Si"/>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="top" secondItem="gPI-lf-Cfe" secondAttribute="bottom" constant="55" id="cwu-2k-vnR"/>
+                            <constraint firstItem="gPI-lf-Cfe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="256" id="dSD-GF-4yd"/>
+                            <constraint firstItem="Qfn-2o-bXo" firstAttribute="leading" secondItem="gPI-lf-Cfe" secondAttribute="trailing" constant="3" id="gH0-Cg-vid"/>
+                            <constraint firstItem="Qfn-2o-bXo" firstAttribute="leading" secondItem="gPI-lf-Cfe" secondAttribute="trailing" constant="3" id="kru-T7-VDs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qfn-2o-bXo" secondAttribute="trailing" constant="38" id="nkL-fh-Ymn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wKu-yE-NL9" secondAttribute="bottom" constant="170" id="ysn-AC-zsF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gPI-lf-Cfe"/>
+                                <exclude reference="Qfn-2o-bXo"/>
+                                <exclude reference="wKu-yE-NL9"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="JZN-Ix-60r"/>
+                                <exclude reference="Y5Z-xa-jn9"/>
+                                <exclude reference="dSD-GF-4yd"/>
+                                <exclude reference="1kG-OZ-Ot0"/>
+                                <exclude reference="5VL-tC-oDB"/>
+                                <exclude reference="8dW-IP-3uL"/>
+                                <exclude reference="C9N-kK-YAn"/>
+                                <exclude reference="Xgp-BP-asK"/>
+                                <exclude reference="YUv-qj-ZqT"/>
+                                <exclude reference="cwu-2k-vnR"/>
+                                <exclude reference="4ka-5d-fyo"/>
+                                <exclude reference="Kbd-03-UP2"/>
+                                <exclude reference="V9q-bq-max"/>
+                                <exclude reference="cMA-pb-9Si"/>
+                                <exclude reference="gH0-Cg-vid"/>
+                                <exclude reference="kru-T7-VDs"/>
+                                <exclude reference="nkL-fh-Ymn"/>
+                                <exclude reference="5jk-Cg-f9S"/>
+                                <exclude reference="DGD-kI-yr5"/>
+                                <exclude reference="ReR-j6-tUu"/>
+                                <exclude reference="ysn-AC-zsF"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gPI-lf-Cfe"/>
+                                <include reference="Qfn-2o-bXo"/>
+                                <include reference="wKu-yE-NL9"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JZN-Ix-60r"/>
+                                <include reference="Y5Z-xa-jn9"/>
+                                <include reference="dSD-GF-4yd"/>
+                                <include reference="1kG-OZ-Ot0"/>
+                                <include reference="5VL-tC-oDB"/>
+                                <include reference="8dW-IP-3uL"/>
+                                <include reference="C9N-kK-YAn"/>
+                                <include reference="Xgp-BP-asK"/>
+                                <include reference="YUv-qj-ZqT"/>
+                                <include reference="cwu-2k-vnR"/>
+                                <include reference="4ka-5d-fyo"/>
+                                <include reference="Kbd-03-UP2"/>
+                                <include reference="V9q-bq-max"/>
+                                <include reference="cMA-pb-9Si"/>
+                                <include reference="gH0-Cg-vid"/>
+                                <include reference="kru-T7-VDs"/>
+                                <include reference="nkL-fh-Ymn"/>
+                                <include reference="5jk-Cg-f9S"/>
+                                <include reference="DGD-kI-yr5"/>
+                                <include reference="ReR-j6-tUu"/>
+                                <include reference="ysn-AC-zsF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="showCancelButtonSwitch" destination="Qfn-2o-bXo" id="zgA-ec-uZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241.5" y="393"/>
+        </scene>
+    </scenes>
+</document>
